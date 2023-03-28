@@ -18,3 +18,9 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:dividend_project;DB_CLOSE_DELAY=-1
     username: sa
+    password:
+
+#서비스 변경시 배포할때 변경할 코드만 적용해주면 됨
+scheduler:
+  scrap:
+    yahoo: "0 0 0 * * *"
